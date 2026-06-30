@@ -1,4 +1,4 @@
-{% set version = '0.8.0' %}
+{% set version = "0.8.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/teal.data_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/teal.data/teal.data_{{ version }}.tar.gz
-  sha256: 4e571c6fd6d5d8a0f54d8667f9b6bb06c8c76db94b96171a66216732d09b87fe
+  sha256: 31329e85e8a09a7b6eb17e999e305499cd0c004dc021bb8738782c2732fc13f1
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -47,8 +47,7 @@ test:
 about:
   home: https://insightsengineering.github.io/teal.data/, https://github.com/insightsengineering/teal.data/
   license: Apache-2.0
-  summary: Provides a 'teal_data' class as a unified data model for 'teal' applications focusing
-    on reproducibility and relational data.
+  summary: Provides a 'teal_data' class as a unified data model for 'teal' applications focusing on reproducibility and relational data.
   license_family: APACHE
   license_file:
     - LICENSE-2.0.txt
